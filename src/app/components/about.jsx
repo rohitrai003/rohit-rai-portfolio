@@ -24,14 +24,8 @@ export default function About() {
         <img src="your-photo.jpg" alt="Your Photo" className="rounded-full w-48 mx-auto" />
         <div>
           <h2 className="text-3xl font-bold mb-4">About Me</h2>
-          <p className="text-lg mb-4">I’m a passionate and creative flutter and web developer with experience in creating stunning and functional app and websites. I specialize in Flutter, React.js, Expressjs, and React Native</p>
-          <div>
-            <h2 className="font-semibold">Skills:</h2>
-            <ul className="flex space-x-4 mt-4">
-              {skills.map((e) => <li key={e}><span className={`${e.bg} ${e.textColor} px-5 py-3 rounded`}>{e.skill}</span></li>)}
-            </ul>
-          </div>
-        </div>
+          <p className="text-lg mb-4 text-justify">I’m a passionate and creative flutter and web developer with experience in creating stunning and functional app and websites. I specialize in Flutter, React.js, Expressjs, and React Native</p>
+         </div>
       </div>
     </section>
   )
