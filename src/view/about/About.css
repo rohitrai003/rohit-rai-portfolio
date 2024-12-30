@@ -1,0 +1,25 @@
+.about{
+    height: fit-content;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+
+
+}
+.about > h2{
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--text-color);
+}
+.about> p{
+    width: 50%;
+    font-size: 20px;
+    text-align: center;
+    color: var(--text-color);
+    letter-spacing: 2px;
+
+}
