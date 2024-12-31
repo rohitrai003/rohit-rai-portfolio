@@ -6,6 +6,7 @@ import { Footer } from './view/footer/Footer';
 import { Header } from './view/header/Header';
 import { Hero } from './view/hero/Hero';
 import { Projects } from './view/projects/Projects';
+import Skill from './view/skill/Skill';
 function App() {
   return (
     <div className="app">
@@ -13,6 +14,7 @@ function App() {
       <main>
         <Hero/>
         <About />
+        <Skill/>
         <Projects />
         <Contact />
       </main>

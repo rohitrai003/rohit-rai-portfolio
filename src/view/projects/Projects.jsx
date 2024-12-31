@@ -3,8 +3,8 @@ import { FaMobileAlt } from "react-icons/fa";
 
 export function Projects() {
     const projectList = [
-      { name: 'Expense Tracker App', description: 'Developed a Flutter app for personal finance management, utilizing Provider for state management.', link: '#' , tools : ['React', 'Node', 'Express', 'MongoDB']},
-      { name: 'Todo Note App', description: 'Description of project 2', link: '#',tools : ['React', 'Node', 'Express', 'MongoDB'] },
+      { name: 'Expense Tracker App', description: 'Developed a Flutter app for personal finance management, utilizing Provider for state management.', link: '#' , tools : ['Flutter', 'ExpressJS', 'MongoDB']},
+      { name: 'Todo Note App', description: 'Description of project 2', link: '#',tools : ['Flutter', 'Node', 'ExpressJs', 'MongoDB'] },
       { name: 'Project 3', description: 'Description of project 3', link: '#',tools : ['React', 'Node', 'Express', 'MongoDB'] },
     ];
   
