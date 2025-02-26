@@ -24,7 +24,7 @@
 
 @media screen and (max-width:768px){
     .about{
-        width: 50%;
+        width: fit-content;
         height: fit-content;
         display: flex;
         justify-self: center;
@@ -35,7 +35,7 @@
         color: var(--text-color);
     }
     .about > p{
-        width: 90%;
+        width: 70%;
         font-size: 0.6rem;
         color: var(--text-color);
         letter-spacing: 1px;

@@ -1,132 +1,125 @@
-.projects{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 50px;
-    flex-direction: column;
-    width: 100%;
-    align-items: center;
-
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 50px;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
 }
 
-.projects h2{
-    color: var(--text-color);
-    margin-bottom: 20px;
-    font-size: 40px;
-
+.projects h2 {
+  color: var(--text-color);
+  margin-bottom: 20px;
+  font-size: 40px;
 }
 
-.projects > .project-list{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex-direction: row;
+.projects > .project-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-direction: row;
 }
 
-.projects .project-list .project-item{
-    border: 1px solid var(--text-color);
-    margin: 10px;
-    padding: 20px ;
-    width: 280px;
-    aspect-ratio: 3/4;
-    position: relative;
-    color: var(--text-color);
-
+.projects .project-list .project-item {
+  border: 1px solid var(--text-color);
+  margin: 10px;
+  padding: 20px;
+  width: 280px;
+  aspect-ratio: 3/4;
+  position: relative;
+  color: var(--text-color);
 }
-.projects .project-list .project-item .icon{
-    height: 30px;
-    aspect-ratio: 1/1.5;
-    margin-bottom: 15px;
+.projects .project-list .project-item .icon {
+  height: 30px;
+  aspect-ratio: 1/1.5;
+  margin-bottom: 15px;
 }
-.projects .project-list .project-item h3{
-    margin-bottom: 20px;
+.projects .project-list .project-item h3 {
+  margin-bottom: 20px;
 }
-.projects .project-list .project-item p{
-    margin-bottom: 20px;
-    text-align:left;
-}
-
-.projects .project-list .project-item .tools{
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 20px;
-    align-items: center;
-    justify-content: start;
-    position: absolute;
-    bottom: 50px;
-    
+.projects .project-list .project-item p {
+  margin-bottom: 20px;
+  text-align: left;
 }
 
-.projects .project-list .project-item .tools .tools-body{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); 
-    gap: 1px; 
-}
-.projects .project-list .project-item .tools .tools-body .tool-items{
-    padding: 5px;
-    border: 1px solid var(--text-color);
-    border-radius: 5px;
-    margin: 0px 5px;
-    margin: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
+.projects .project-list .project-item .tools {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  align-items: center;
+  justify-content: start;
+  position: absolute;
+  bottom: 50px;
 }
 
-.projects > .project-list > .project-item > a{
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
-    color: var(--secondary-color);
+.projects .project-list .project-item .tools .tools-body {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1px;
+}
+.projects .project-list .project-item .tools .tools-body .tool-items {
+  padding: 5px;
+  border: 1px solid var(--text-color);
+  border-radius: 5px;
+  margin: 0px 5px;
+  margin: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.projects > .project-list > .project-item > a {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  color: var(--secondary-color);
 }
 
 /* Mobile Screen */
-@media screen and (max-width:768px){
-  .projects{
-    width: 50%;
+@media screen and (max-width: 768px) {
+  .projects {
     display: flex;
     justify-self: center;
   }
 
-      .project-list{
-        display: grid;
-        grid-template-columns: repeat(3, 1fr); 
-        gap: 10px; 
-        width: 50%;
-    
-      }
-      .projects h2{
-        font-size: 1rem;
-      }
-      .tool-items{
-        font-size: 0.6rem;
-      }
-      .project-list .project-item{
-        width: fit-content;
-        min-width: 150px;
-        display: flex;
-        flex-direction: column;
-        padding: 0.01rem;
-      }
-      .project-list .project-item h3{
-        font-size:0.8rem
-      }
-      .project-list .project-item p{
-        font-size: 0.6rem;
-      }
-      .project-list .project-item .tools{
-        background: transparent;
-      }
-      .project-list .project-item .tools .tools-body{
-        background: transparent;
-      }
-      .projects .project-list .project-item .tools{
-        display: none;
-      }
-      .project-list .project-item a{
-        position: relative;
-        bottom: 0px;
-        font-size: 0.7rem;
-      }
+  .project-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    width: fit-content;
+  }
+  .projects h2 {
+    font-size: 1rem;
+  }
+  .tool-items {
+    font-size: 0.6rem;
+  }
+  .project-list .project-item {
+    width: fit-content;
+    max-width: 150px;
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+  }
+  .project-list .project-item h3 {
+    font-size: 0.8rem;
+  }
+  .project-list .project-item p {
+    font-size: 0.6rem;
+  }
+  .project-list .project-item .tools {
+    background: transparent;
+  }
+  .project-list .project-item .tools .tools-body {
+    background: transparent;
+  }
+  .projects .project-list .project-item .tools {
+    display: none;
+  }
+  .project-list .project-item a {
+    position: relative;
+    bottom: 0px;
+    font-size: 0.7rem;
+  }
 }
