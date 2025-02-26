@@ -80,3 +80,53 @@
     right: 10px;
     color: var(--secondary-color);
 }
+
+/* Mobile Screen */
+@media screen and (max-width:768px){
+  .projects{
+    width: 50%;
+    display: flex;
+    justify-self: center;
+  }
+
+      .project-list{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); 
+        gap: 10px; 
+        width: 50%;
+    
+      }
+      .projects h2{
+        font-size: 1rem;
+      }
+      .tool-items{
+        font-size: 0.6rem;
+      }
+      .project-list .project-item{
+        width: fit-content;
+        min-width: 150px;
+        display: flex;
+        flex-direction: column;
+        padding: 0.01rem;
+      }
+      .project-list .project-item h3{
+        font-size:0.8rem
+      }
+      .project-list .project-item p{
+        font-size: 0.6rem;
+      }
+      .project-list .project-item .tools{
+        background: transparent;
+      }
+      .project-list .project-item .tools .tools-body{
+        background: transparent;
+      }
+      .projects .project-list .project-item .tools{
+        display: none;
+      }
+      .project-list .project-item a{
+        position: relative;
+        bottom: 0px;
+        font-size: 0.7rem;
+      }
+}

@@ -21,3 +21,24 @@
     letter-spacing: 2px;
 
 }
+
+@media screen and (max-width:768px){
+    .about{
+        width: 50%;
+        height: fit-content;
+        display: flex;
+        justify-self: center;
+    }
+    .about > h2{
+        font-size: 1rem;
+        margin-bottom: 10px;
+        color: var(--text-color);
+    }
+    .about > p{
+        width: 90%;
+        font-size: 0.6rem;
+        color: var(--text-color);
+        letter-spacing: 1px;
+    
+    }
+}

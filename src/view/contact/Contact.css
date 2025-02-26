@@ -7,7 +7,6 @@
     margin-top: 50px;
     padding: 30px;
     color: var(--text-color);
-   
 }
 
 .contact > h2{
@@ -52,7 +51,60 @@
     border: none;
     background: var(--secondary-color);
     color: black;
-
     border-radius: 5px;
     cursor: pointer;
+}
+
+/* Mobile Screen */
+@media screen and (max-width:768px) {
+    .contact {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: fit-content;
+        justify-self: center;
+    }
+    .contact > h2{
+       font-size: 1rem;
+       margin-bottom: 0.1rem;
+    }
+    .contact > p {
+        font-size: 0.6rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .contact .contact-form{
+        width: fit-content;
+        margin: 10px;
+
+      
+    }
+    
+    .contact .contact-form input{
+        font-size: 0.5rem;
+        padding: 5px 5px;
+        margin-bottom: 3px;
+        min-width: 150px;
+        
+  
+    }
+    
+    .contact > .contact-form textarea{
+        font-size: 0.5rem;
+        padding: 5px 5px;
+        margin-bottom: 3px;
+
+    }
+    
+    .contact .contact-form input, textarea:focus{
+        outline: none;
+    }
+    
+    .contact .contact-form button{
+        font-size: 0.6rem;
+        padding: 10px 5px;
+
+    }
+    
+    
 }
